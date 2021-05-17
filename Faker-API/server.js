@@ -49,9 +49,9 @@ app.get("/api/companies/new", (req, res) => {
 })
 
 app.get("/api/user/company", (req,res) =>{
-    const array = [];
-    array.push(usuario, empresa);
-    res.json(array);
+    const objeto = {usuario, empresa};
+    //array.push(usuario, empresa);
+    res.send(objeto);
 })
 
 app.listen(8000, ()=>{
