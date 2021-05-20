@@ -1,0 +1,8 @@
+###Create Jokes
+POST http://localhost:4000/api/jokes
+content-type: application/json
+
+{
+    "setup": "What did one wall say to the other wall?",
+    "punchline": "I ll meet you at the corner!"
+}
